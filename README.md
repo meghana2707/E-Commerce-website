@@ -1,6 +1,41 @@
 # E-Commerce-website
 This repository contains the executable along with the images used to build the custom website.
 
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.dropbtn {
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+
+}
+
+#myInput
+{
+
+box-sizing: border-box;
+background-position: 14px 12px;
+background-repeat: no-repeat;
+font-size: 16px;
+padding: 14px 20px 12px 45px;
+border: none;
+
+}
+
+#myInput:focus
+{
+
+outline: 3px solid #ddd;
+
+}
+
 
 Website is created by inserting a logo.
 
