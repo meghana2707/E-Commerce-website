@@ -1,0 +1,395 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.dropbtn {
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+#myInput
+{
+	box-sizing: border-box;
+	background-position: 14px 12px;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	padding: 14px 20px 12px 45px;
+	border: none;
+}
+
+#myInput:focus
+{
+	outline: 3px solid #ddd;
+}
+
+.dropdown
+{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    width: 16px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+	color: black;
+	padding: 12 px 16 px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover
+{
+	background-color: #ddd;
+}
+
+.show 
+{
+	display: block;
+}
+
+.mySlides {display: none;}
+
+	.checked {
+		color: orange;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #89CFF0;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+		padding: 12px 16px;
+		z-index: 1;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+</style>
+
+<title> PERFECT FRAME </title>
+</head>
+
+<body bgcolor="#F1F3F6">
+
+<table border="0" width="100%" bgcolor="#000080">
+
+<tr>
+<td align="right"><img src="logo.png" width="60%" height="80"></td>
+<td class="dropdown"><input type="text" placeholder="Search for products, brands and more" style="width: 510px;height: 40px;" onclick="myFunction()" class="dropbtn" id="myInput" onkeyup="filterFunction()">
+
+<div id="myDropdown" class="dropdown-content">
+	<a href="gadgets.html"><b>Gadgets</a></b><br>
+	<a href="appliances.html"><b>Appliances</a></b><br>
+	<a href="mobiles.html"><b>Mobiles</a><b><br>
+	<a href="hugsy.html"><b>Fashion</a></b><br>
+	<a href="book.html"><b>Books</a></b><br>
+	<a href="furniture.html"><b>Furniture</a></b><br>
+	<a href="shoe.html"><b>Shoes</a></b><br>
+</div>
+
+<input type="button" value="Search" style="width: 120px;height: 30px;">
+</td>
+<th><font color="white"> Login & Signup </font></th>
+<th><font color="white"> More </font></th>
+<th><img src="cart.png"width="40%" height="80"></th>
+</tr>
+</table>
+
+<table border="0" width="100%" bgcolor="lightblue" height="8%">
+	<tr>
+		<th width="12.5%">
+		<div class="dropdown">
+<span>Electronics</span>
+<div class="dropdown-content">
+<p align="left">Mobile</p>	
+<p align="left">Laptops</p>
+<p align="left">Airpods</p>
+<p align="left">Tablets</p>
+</div>
+</div>
+</th>
+
+<th width="12.5%">
+<div class="dropdown">
+<span>Appliances</span>
+<div class="dropdown-content">
+<p align="left">Mixer</p>	
+<p align="left">Washing Machine</p>
+<p align="left">Fridge</p>
+<p align="left">Microven</p>
+</div>
+</div>
+</th>
+
+<th width="12.5%">
+<div class="dropdown">
+<span>Mobile</span>
+<div class="dropdown-content">
+<p align="left">Samsung Galaxy M32</p>	
+<p align="left">Redmi Note 8 Pro</p>
+<p align="left">Vivo v23 Pro</p>
+<p align="left">Iphone 13 Pro Max</p>
+</div>
+</div>
+</th>
+
+<th width="12.5%">
+<div class="dropdown">
+<span>Fashion</span>
+<div class="dropdown-content">
+<p align="left">Hoodie</p>	
+<p align="left">Tops</p>
+<p align="left">T-shirts</p>
+<p align="left">Shirts</p>
+</div>
+</div>
+</th>
+
+<th width="12.5%">
+<div class="dropdown">
+<span>Books</span>
+<div class="dropdown-content">
+<p align="left">Textbook</p>	
+<p align="left">Storybook</p>
+<p align="left">Psychology</p>
+<p align="left">Mythology</p>
+</div>
+</div>
+</th>
+
+<th width="12.5%">
+<div class="dropdown">
+<span>Home & Furnitures</span>
+<div class="dropdown-content">
+<p align="left"> Dining Table</p>	
+<p align="left">Tea Table</p>
+<p align="left">Sofa Set</p>
+<p align="left">Cot</p>
+</div>
+</div>
+</th>
+
+<th width="12.5%">
+<div class="dropdown">
+<span>Sports</span>
+<div class="dropdown-content">
+<p align="left">Puma</p>	
+<p align="left">Adidas</p>
+<p align="left">Power</p>
+<p align="left">U.S Polo</p>
+</div>
+</div>
+</th>
+
+<th width="12.5%">
+<div class="dropdown">
+<span>Offer Zone</span>
+<div class="dropdown-content">
+<p align="left">Mobile</p>	
+<p align="left">Laptops</p>
+<p align="left">Fridge</p>
+<p align="left">Tablets</p>
+</div>
+</div>
+</td>
+</th>
+</table>
+
+<div class="w3-content w3-section">
+	<img class="mySlides" src="slider1.jpg" style="width:100%" height="400">
+	<img class="mySlides" src="slider2.jpg" style="width:100%" height="400">
+	<img class="mySlides" src="slider3.jpg" style="width:100%" height="400">
+</div>
+
+<table border="0" width="100%" bgcolor="white">
+
+<tr>
+
+<th><img src="gadgets.jpeg" width="40%" height="140"></th>
+<th><img src="appliances.jpeg" width="40%" height="140"></th> 
+<th><img src="mobiles.png"  width="40%" height="140"></th>
+<th><img src="hugsy.jpeg" width="40%" height="140"></th>
+<th><img src="book.jpg"  width="40%" height="140"></th>
+<th><img src="furniture.jpg"  width="40%" height="140"></th>
+<th><img src="shoe.jpg"  width="40%" height="140"></th>
+
+</tr>
+
+<tr>
+<th>	
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</th>
+
+<th>	
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</th>
+
+<th>	
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</th>
+
+<th>	
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</th>
+
+<th>	
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</th>
+
+<th>	
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</th>
+
+<th>	
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</th>
+
+<tr>
+	<th>Price: <font color="green">17,000/-</font></th>
+	<th>Price: <font color="green">5000/-</font></th>
+	<th>Price: <font color="green">23,000/-</font></th>
+	<th>Price: <font color="green">1500/-</font></th>
+	<th>Price: <font color="green">1000/-</font></th>
+	<th>Price: <font color="green">50,000/-</font></th>
+	<th>Price: <font color="green">2000/-</font></th>
+
+<tr>
+<th><a href="showdetails.html"><input type="button" value="Show Details" style="width:120px;height:25px;background-color: blue;color: white;"></a></th>	
+<th><a href="showdetails.html"><input type="button" value="Show Details" style="width:120px;height:25px;background-color: blue;color: white;"></a></th>	
+<th><a href="showdetails.html"><input type="button" value="Show Details" style="width:120px;height:25px;background-color: blue;color: white;"></a></th>	
+<th><a href="showdetails.html"><input type="button" value="Show Details" style="width:120px;height:25px;background-color: blue;color: white;"></a></th>	
+<th><a href="showdetails.html"><input type="button" value="Show Details" style="width:120px;height:25px;background-color: blue;color: white;"></a></th>
+<th><a href="showdetails.html"><input type="button" value="Show Details" style="width:120px;height:25px;background-color: blue;color: white;"></a></th>	
+<th><a href="showdetails.html"><input type="button" value="Show Details" style="width:120px;height:25px;background-color: blue;color: white;"></a></th>	
+
+</tr>
+</table>
+<br>
+
+<table border="0" width="100%" bgcolor="#800080">
+
+<tr>
+	<td bgcolor="black" width="25%"><font color="white"><b>Quick Links</b></font></td>
+	<td bgcolor="black" width="25%"><font color="white"><b>Follow Us</b></font></td>
+	<td bgcolor="black" width="25%"><font color="white"><b>Contact</b></font></td>
+	<td bgcolor="black" width="25%"><font color="white"><b>Search</b></font></td>
+</tr>
+
+<tr>
+	<td>
+		<ul>
+	<li><font color="white">Electronics</font></li>
+	<li><font color="white">Appliances</font></li>
+	<li><font color="white">Mobiles</font></li>
+	<li><font color="white">Fashion</font></li>
+
+	<td>
+		<ul>
+	<li><font color="white">Facebook</font></li>
+	<li><font color="white">Twitter</font></li>
+	<li><font color="white">Instagram</font></li>
+	<li><font color="white">Youtube</font></li>
+
+<td>
+		<ul>
+	<li><font color="white">Sara</font></li>
+	<li><font color="white">+91 9484546845</font></li>
+	<li><font color="white">India</font></li>
+	<li><font color="white">67580</font></li>
+	
+</ul>
+
+<td><input type="text" placeholder="Search">
+<input type="button" value="Search">
+</td>
+</tr>
+
+</table>
+
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for(i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		myIndex++;
+		if(myIndex > x.length) {myIndex = 1}
+			x[myIndex-1].style.display = "block";
+		setTimeout(carousel , 3000);
+	}
+</script>
+
+<script>
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	function filterFunction() {
+		var input, filter, ul, li, a, i;
+		input = document.getElementById("myInput");
+		filter = input.value.toUpperCase();
+		div = document.getElementById("myDropdown");
+		a = div.getElementsByTagName("a");
+		for(i = 0; i < a.length; i++) {
+		txtValue = a[i].textContent || a[i].innerText;
+		if(txtValue.toUpperCase().indexOf(filter) > -1){
+} else {
+	a[i].style.display = "none";
+}	
+		}
+	}
+</script>
+</body>
+</html>
